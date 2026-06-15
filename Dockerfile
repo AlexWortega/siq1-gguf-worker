@@ -6,4 +6,4 @@ COPY handler.py /handler.py
 ENV GGUF_REPO=AlexWortega/SIQ-1-35B \
     GGUF_FILE=gguf/SIQ-1-35B.Q4_K_M.gguf \
     N_CTX=16384 NGL=99
-CMD ["python3", "/handler.py"]
+ENTRYPOINT ["python3", "/handler.py"]
